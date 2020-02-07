@@ -1,5 +1,6 @@
-%% get data
-clc;
+clear;clc
+
+% get data
 data=readtable('RLFs_processedData_27b.csv');
 x=data(strcmp(data.condition,'ly6'),:).dB;
 y=data(strcmp(data.condition,'ly6'),:).FiringRate;
